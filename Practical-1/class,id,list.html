@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+            class,list,id
+        </title>
+        <style>
+            .list1 h1
+            {
+               color: Orange;
+
+            }
+            .list1{
+                color: Green;
+                list-style: square;
+                list-style-position: outside;
+                list-style-position: revert;
+                
+            }
+            ul,ol,dl{
+                transition: font-size 1s;
+            }
+            ul:hover,ol:hover,dl:hover{
+                
+                font-size: 50px;
+            }
+            ul li,ol li,dl dd,dl dt{
+                transition: margin-left 1s;
+            }
+            ul li:hover,ol li:hover,dl dd:hover,dl dt:hover{
+                margin-left: 30px;
+            }  
+        </style>
+    </head>
+    <body style="text-transform: capitalize;">
+        <div class="list1">
+            <h1>Country</h1>
+            <ul>
+                <li>India</li>
+                <li>China</li>
+                <li>Japan</li>
+                <li>USA</li>
+                <li>Australia</li>
+            </ul>
+            <ol>
+                <li>India</li>
+                <li>China</li>
+                <li>Japan</li>
+                <li>USA</li>
+                <li>Australia</li>
+            </ol>
+            <dl>
+                <dt>Country</dt>
+                <dd>India</dd>
+                <dd>China</dd>
+                <dd>Japan</dd>
+                <dd>USA</dd>
+            </dl>
+        </div>
+    </body>
+</html>
